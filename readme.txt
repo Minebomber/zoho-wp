@@ -11,5 +11,9 @@ Connects Wordpress to the Zoho API and adds a form submission action to Elemento
 Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms. This plugin handles Zoho OAuth connection & access tokens, and adds a subscribe action to Elementor Pro forms that will add a contact to a Zoho Campaigns mailing list.
 
 == Changelog ==
+
+= 1.0.1 =
+* Refactor and add comments to class-zoho.php
+
 = 1.0.0 =
 * Created plugin

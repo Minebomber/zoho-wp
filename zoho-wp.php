@@ -2,7 +2,7 @@
 /*
 Plugin Name: Zoho for WordPress
 Description: Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms
-Version: 1.0.0
+Version: 1.0.1
 Author: Mark Lagae
 Text Domain: zoho-wp
 */

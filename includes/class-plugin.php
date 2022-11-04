@@ -12,7 +12,6 @@ class Plugin {
 		$this->load_dependencies();
 		$this->load_i18n();
 		$this->load_admin();
-		$this->load_public();
 		$this->load_elementor();
 	}
 
@@ -41,15 +40,6 @@ class Plugin {
 		$elementor = Elementor::instance();
 		$this->loader->add_action('elementor_pro/forms/actions/register', $elementor, 'register_form_actions');
 	}
-
-	private function load_public() {
-		add_shortcode('mailinglists', [$this, 'test_mailinglists']);
-	}
-
-	public function test_mailinglists() {
-		return '<pre>' . json_encode(Zoho::instance()->get_all_fields()) . '</pre>';
-	}
-	
 
 	public function run() {
 		$this->loader->register_all();

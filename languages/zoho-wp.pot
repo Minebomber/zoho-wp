@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-04T21:25:48+00:00\n"
+"POT-Creation-Date: 2022-11-04T22:13:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: zoho-wp\n"
@@ -31,76 +31,88 @@ msgstr ""
 msgid "ZohoWP"
 msgstr ""
 
-#: includes/class-admin.php:50
+#: includes/class-admin.php:44
 msgid "Zoho for Wordpress Settings"
 msgstr ""
 
-#: includes/class-admin.php:106
+#: includes/class-admin.php:100
 msgid "Connected"
 msgstr ""
 
-#: includes/class-admin.php:109
+#: includes/class-admin.php:103
 msgid "Ready"
 msgstr ""
 
-#: includes/class-admin.php:113
+#: includes/class-admin.php:107
 msgid "Incomplete"
 msgstr ""
 
-#: includes/class-admin.php:116
+#: includes/class-admin.php:110
 msgid "Connection Status: %s"
 msgstr ""
 
-#: includes/class-admin.php:119
+#: includes/class-admin.php:113
 msgid "To disconnect, delete the Client ID and Client Secret values below"
 msgstr ""
 
-#: includes/class-admin.php:121
+#: includes/class-admin.php:115
 msgid "Connect to Zoho"
 msgstr ""
 
-#: includes/class-admin.php:123
+#: includes/class-admin.php:117
 msgid "How to Connect"
 msgstr ""
 
-#: includes/class-admin.php:127
+#: includes/class-admin.php:121
 msgid "Create a server based application in the "
 msgstr ""
 
-#: includes/class-admin.php:128
+#: includes/class-admin.php:122
 msgid "Zoho API Console"
 msgstr ""
 
-#: includes/class-admin.php:131
+#: includes/class-admin.php:125
 msgid "Use the following values when creating the application:"
 msgstr ""
 
-#: includes/class-admin.php:133
+#: includes/class-admin.php:127
 msgid "Homepage URL: "
 msgstr ""
 
-#: includes/class-admin.php:134
+#: includes/class-admin.php:128
 msgid "Authorized Redirect URI: "
 msgstr ""
 
-#: includes/class-admin.php:138
+#: includes/class-admin.php:132
 msgid "View the "
 msgstr ""
 
-#: includes/class-admin.php:139
+#: includes/class-admin.php:133
 msgid "Zoho OAuth Setup Guide"
 msgstr ""
 
-#: includes/class-admin.php:140
+#: includes/class-admin.php:134
 msgid " for more information."
 msgstr ""
 
-#: includes/class-admin.php:143
+#: includes/class-admin.php:137
 msgid "Enter the application&apos;s Client ID and Client Secret below."
 msgstr ""
 
-#: includes/class-admin.php:144
+#: includes/class-admin.php:138
 msgid "Save the values to continue to the next step."
+msgstr ""
+
+#: includes/class-zoho.php:110
+msgid "Failed to connect your Zoho Account"
+msgstr ""
+
+#: includes/class-zoho.php:121
+msgid "Your Zoho account has been successfully connected"
+msgstr ""
+
+#: includes/class-zoho.php:147
+msgid "Failed to connect your Zoho Account: %s"
 msgstr ""
 
 #: includes/elementor/subscribe-action.php:37

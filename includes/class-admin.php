@@ -24,26 +24,20 @@ class Admin
 
 	public function render_page()
 	{
+		$options = get_option('zohowp');
 		// Handle oauth redirect
-		if (!empty($_GET['code']) && !empty($_GET['location']) && !empty($_GET['accounts-server'])) {
+		if (
+			!empty($_GET['accounts-server']) &&
+			!empty($_GET['location']) &&
+			!empty($_GET['code']) &&
+			(!isset($options['code']) || $options['code'] !== $_GET['code'])
+		) {
 			$code = $_GET['code'];
 			$location = $_GET['location'];
 			$accounts_server = $_GET['accounts-server'];
 			$zoho = Zoho::instance();
-			$zoho->merge_options(['location' => $location, 'accounts_server' => $accounts_server]);
-			$response = wp_remote_post($zoho->request_access_token_uri($code));
-			if (!is_wp_error($response)) {
-				$body = wp_remote_retrieve_body($response);
-				$zoho->update_token_information($body);
-				// Redirect back to page to clear out the parameters
-?>
-				<script>
-					jQuery(document).ready(function() {
-						window.location.replace('<?php echo $zoho->get_redirect_uri(); ?>');
-					});
-				</script>
-		<?php
-			}
+			$zoho->merge_options(['code' => $code, 'location' => $location, 'accounts_server' => $accounts_server]);
+			$zoho->update_account_connection($code);
 		}
 		?>
 		<div class='wrap'>
@@ -91,7 +85,7 @@ class Admin
 				'sanitize_callback' => [$this, 'sanitize_settings'],
 				'default' => [
 					'client_id' => '',
-					'client_secret' => ''
+					'client_secret' => '',
 				]
 			]
 		);

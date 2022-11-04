@@ -97,7 +97,7 @@ class ZohoWP_Subscribe_Action extends \ElementorPro\Modules\Forms\Classes\Action
 				$fieldmap[$zohofield['DISPLAY_NAME']] = $value;
 			}
 		}
-		$result = \ZohoWP\Zoho::instance()->subscribe($settings['zohowp_subscribe_list'], urlencode(json_encode($fieldmap)));
+		$result = \ZohoWP\Zoho::instance()->subscribe($settings['zohowp_subscribe_list'], $fieldmap);
 		if ($result['code'] !== '0') {
 			$ajax_handler->add_error_message('ZohoWP: ' . $result['message'] ?? __('Submission error', 'zoho-wp'));
 		}
