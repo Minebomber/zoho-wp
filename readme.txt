@@ -12,6 +12,9 @@ Connects Wordpress to the Zoho API and adds a form submission action to Elemento
 
 == Changelog ==
 
+= 1.0.2 =
+* Update admin page icon entry
+
 = 1.0.1 =
 * Refactor and add comments to class-zoho.php
 
