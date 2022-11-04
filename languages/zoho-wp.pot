@@ -1,0 +1,137 @@
+# Copyright (C) 2022 Mark Lagae
+# This file is distributed under the same license as the Zoho for WordPress plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zoho for WordPress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zoho-wp\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-11-04T21:25:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: zoho-wp\n"
+
+#. Plugin Name of the plugin
+msgid "Zoho for WordPress"
+msgstr ""
+
+#. Description of the plugin
+msgid "Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mark Lagae"
+msgstr ""
+
+#: includes/class-admin.php:15
+#: includes/class-admin.php:16
+msgid "ZohoWP"
+msgstr ""
+
+#: includes/class-admin.php:50
+msgid "Zoho for Wordpress Settings"
+msgstr ""
+
+#: includes/class-admin.php:106
+msgid "Connected"
+msgstr ""
+
+#: includes/class-admin.php:109
+msgid "Ready"
+msgstr ""
+
+#: includes/class-admin.php:113
+msgid "Incomplete"
+msgstr ""
+
+#: includes/class-admin.php:116
+msgid "Connection Status: %s"
+msgstr ""
+
+#: includes/class-admin.php:119
+msgid "To disconnect, delete the Client ID and Client Secret values below"
+msgstr ""
+
+#: includes/class-admin.php:121
+msgid "Connect to Zoho"
+msgstr ""
+
+#: includes/class-admin.php:123
+msgid "How to Connect"
+msgstr ""
+
+#: includes/class-admin.php:127
+msgid "Create a server based application in the "
+msgstr ""
+
+#: includes/class-admin.php:128
+msgid "Zoho API Console"
+msgstr ""
+
+#: includes/class-admin.php:131
+msgid "Use the following values when creating the application:"
+msgstr ""
+
+#: includes/class-admin.php:133
+msgid "Homepage URL: "
+msgstr ""
+
+#: includes/class-admin.php:134
+msgid "Authorized Redirect URI: "
+msgstr ""
+
+#: includes/class-admin.php:138
+msgid "View the "
+msgstr ""
+
+#: includes/class-admin.php:139
+msgid "Zoho OAuth Setup Guide"
+msgstr ""
+
+#: includes/class-admin.php:140
+msgid " for more information."
+msgstr ""
+
+#: includes/class-admin.php:143
+msgid "Enter the application&apos;s Client ID and Client Secret below."
+msgstr ""
+
+#: includes/class-admin.php:144
+msgid "Save the values to continue to the next step."
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:37
+#: includes/elementor/subscribe-action.php:118
+msgid "ZohoWP Subscribe"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:52
+msgid "ZohoWP: Missing Zoho mailing list key"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:58
+msgid "ZohoWP: Failed to fetch Zoho field schema"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:75
+msgid "ZohoWP: Missing required field mapping"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:83
+msgid "ZohoWP: Invalid field ID"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:102
+msgid "Submission error"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:136
+msgid "Mailing List"
+msgstr ""
+
+#: includes/elementor/subscribe-action.php:156
+msgid "Field ID"
+msgstr ""
