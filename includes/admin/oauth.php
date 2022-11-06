@@ -97,7 +97,7 @@ class OAuth extends Page
 	public static function status_section()
 	{
 		$has_refresh = !empty(get_option('zohowp_refresh_token'));
-		$has_client = !empty(get_option('zohowp_client_id', '')) && !empty('zohowp_client_secret', '');
+		$has_client = !empty(get_option('zohowp_client_id', '')) && !empty(get_option('zohowp_client_secret', ''));
 ?>
 		<?php if ($has_refresh) : ?>
 			<p><?php _e('You are currently connected to the Zoho API. To disconnect, delete the Client ID and Client Secret values below.', 'zoho-wp'); ?></p>
