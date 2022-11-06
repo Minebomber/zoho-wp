@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-06T04:01:00+00:00\n"
+"POT-Creation-Date: 2022-11-06T04:20:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: zoho-wp\n"
@@ -71,7 +71,7 @@ msgid "You are currently connected to the Zoho API. To disconnect, delete the Cl
 msgstr ""
 
 #: includes/admin/oauth.php:105
-msgid "To disconnect, delete the Client ID and Client Secret values below"
+msgid "Click the link below to connect your Zoho account."
 msgstr ""
 
 #: includes/admin/oauth.php:106
