@@ -10,5 +10,5 @@ Text Domain: zoho-wp
 define('ZOHOWP_DIR_PATH', plugin_dir_path(__FILE__));
 define('ZOHOWP_VERSION', '1.0.0');
 
-require_once ZOHOWP_DIR_PATH . '/includes/class-plugin.php';
+require_once ZOHOWP_DIR_PATH . '/includes/plugin.php';
 \ZohoWP\Plugin::instance();

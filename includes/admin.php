@@ -2,7 +2,7 @@
 
 namespace ZohoWP;
 
-require_once ZOHOWP_DIR_PATH . '/includes/trait-loader.php';
+require_once ZOHOWP_DIR_PATH . '/includes/loader.php';
 require_once ZOHOWP_DIR_PATH . '/includes/admin/general.php';
 require_once ZOHOWP_DIR_PATH . '/includes/admin/oauth.php';
 
