@@ -14,6 +14,9 @@ class Admin
 	{
 	}
 
+	/**
+ 	 * Method run on init hook
+	 */
 	public static function init()
 	{
 		self::add_action('admin_menu', 'admin_menu');
@@ -29,6 +32,9 @@ class Admin
 		}
 	}
 
+	/**
+ 	 * Method run on admin_menu hook
+	 */
 	public static function admin_menu()
 	{
 		add_menu_page(

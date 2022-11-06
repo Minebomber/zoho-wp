@@ -23,6 +23,9 @@ class General extends Page
 		self::add_filter('zohowp_admin_partial', 'admin_partial', 0, 2);
 	}
 
+	/**
+	 * Override default admin page partial
+	 */
 	public static function admin_partial($partial, $slug)
 	{
 		if ($slug === static::SLUG)

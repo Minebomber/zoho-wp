@@ -54,6 +54,9 @@ class OAuth extends Page
 		);
 	}
 
+	/**
+	 * Handle oauth redirect to setup api tokens
+ 	 */
 	public static function process_authorization_code()
 	{
 		// Check for required parameters
@@ -94,6 +97,9 @@ class OAuth extends Page
 		exit;
 	}
 
+	/**
+	 * Render OAuth status section
+	 */
 	public static function status_section()
 	{
 		$has_refresh = !empty(get_option('zohowp_refresh_token'));
@@ -133,10 +139,16 @@ class OAuth extends Page
 <?php
 	}
 
+	/**
+ 	 * Render OAuth client section
+	 */
 	public static function client_section()
 	{
 	}
 
+	/**
+ 	 * Render client_id field
+	 */
 	public static function client_id_field()
 	{
 		self::render_field([
@@ -145,6 +157,9 @@ class OAuth extends Page
 		]);
 	}
 
+	/**
+ 	 * Render client_secret field
+	 */
 	public static function client_secret_field()
 	{
 		self::render_field([

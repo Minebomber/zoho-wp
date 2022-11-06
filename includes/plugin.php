@@ -22,6 +22,9 @@ class Plugin
 		Admin::add_action('init', 'init');
 	}
 
+	/**
+	 * Method run on init hook
+	 */
 	public static function init()
 	{
 		load_plugin_textdomain('zoho-wp', false, dirname(plugin_basename(__FILE__)) . '/languages');

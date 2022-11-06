@@ -9,10 +9,16 @@ if (!defined('ABSPATH')) exit;
  */
 trait Loader
 {
+	/**
+	 * Wrapper for add_action
+	 */
 	final public static function add_action($hook, $callback, $priority = 10, $accepted_args = 1)
 	{
 		add_action($hook, [static::class, $callback], $priority, $accepted_args);
 	}
+	/**
+	 * Wrapper for add_filter
+	 */
 	final public static function add_filter($hook, $callback, $priority = 10, $accepted_args = 1)
 	{
 		add_filter($hook, [static::class, $callback], $priority, $accepted_args);
