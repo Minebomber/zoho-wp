@@ -97,7 +97,7 @@ class OAuth extends Page
 	public static function status_section()
 	{
 		$has_refresh = !empty(get_option('zohowp_refresh_token'));
-		$has_client = !empty(get_option('zohowp_client_id')) && !empty('zohowp_client_secret');
+		$has_client = !empty(get_option('zohowp_client_id', '')) && !empty('zohowp_client_secret', '');
 ?>
 		<?php if ($has_refresh) : ?>
 			<p><?php _e('You are currently connected to the Zoho API. To disconnect, delete the Client ID and Client Secret values below.', 'zoho-wp'); ?></p>
@@ -141,7 +141,7 @@ class OAuth extends Page
 	{
 		self::render_field([
 			'name' => 'zohowp_client_id',
-			'value' => get_option('zohowp_client_id')
+			'value' => get_option('zohowp_client_id', '')
 		]);
 	}
 
@@ -150,7 +150,7 @@ class OAuth extends Page
 		self::render_field([
 			'type' => 'password',
 			'name' => 'zohowp_client_secret',
-			'value' => get_option('zohowp_client_secret')
+			'value' => get_option('zohowp_client_secret', '')
 		]);
 	}
 }

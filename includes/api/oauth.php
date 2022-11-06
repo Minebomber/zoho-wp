@@ -19,7 +19,7 @@ class OAuth
 	 */
 	public static function get_connection_link()
 	{
-		$client_id = get_option('zohowp_client_id');
+		$client_id = get_option('zohowp_client_id', '');
 		if (empty($client_id)) return false;
 
 		$base_uri = self::oauth_base_uri();
@@ -82,8 +82,8 @@ class OAuth
 	 */
 	protected static function request_access_token_uri($code)
 	{
-		$client_id = get_option('zohowp_client_id');
-		$client_secret = get_option('zohowp_client_secret');
+		$client_id = get_option('zohowp_client_id', '');
+		$client_secret = get_option('zohowp_client_secret', '');
 		if (empty($client_id) || empty($client_secret)) return false;
 		$base_uri = self::oauth_base_uri();
 		$query = http_build_query([
@@ -101,9 +101,9 @@ class OAuth
 	 */
 	protected static function refresh_access_token_uri()
 	{
-		$client_id = get_option('zohowp_client_id');
-		$client_secret = get_option('zohowp_client_secret');
-		$refresh_token = get_option('zohowp_refresh_token');
+		$client_id = get_option('zohowp_client_id', '');
+		$client_secret = get_option('zohowp_client_secret', '');
+		$refresh_token = get_option('zohowp_refresh_token', '');
 		if (empty($client_id) || empty($client_secret) || empty($refresh_token)) return false;
 		$base_uri = self::oauth_base_uri();
 		$query = http_build_query([
