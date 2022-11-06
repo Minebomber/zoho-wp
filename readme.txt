@@ -5,18 +5,11 @@ Requires PHP: 5.4
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms.
+Connects Wordpress to the Zoho API.
 
 == Description ==
-Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms. This plugin handles Zoho OAuth connection & access tokens, and adds a subscribe action to Elementor Pro forms that will add a contact to a Zoho Campaigns mailing list.
-
+Connects Wordpress with the Zoho API using OAuth. This plugin does not bundle any integrations or functionality beyond OAuth authentication and an internal API client, and is intended to be used with a variety of integration add-ons.
 == Changelog ==
 
-= 1.0.2 =
-* Update admin page icon entry
-
-= 1.0.1 =
-* Refactor and add comments to class-zoho.php
-
 = 1.0.0 =
-* Created plugin
+* Initial release

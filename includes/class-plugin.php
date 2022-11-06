@@ -1,47 +1,29 @@
 <?php
+
 namespace ZohoWP;
 
-require_once ZOHOWP_DIR_PATH . '/includes/trait-singleton.php';
+require_once ZOHOWP_DIR_PATH . '/includes/trait-loader.php';
+require_once ZOHOWP_DIR_PATH . '/includes/class-admin.php';
 
-class Plugin {
-	use Singleton;
+class Plugin
+{
+	use Loader;
 
-	protected $loader;
-
-	protected function __construct() {
-		$this->load_dependencies();
-		$this->load_i18n();
-		$this->load_admin();
-		$this->load_elementor();
+	private static $_instance = null;
+	public static function instance() {
+		if (is_null(self::$_instance))
+			self::$_instance = new self();
+		return self::$_instance;
 	}
 
-	private function load_dependencies() {
-		require_once ZOHOWP_DIR_PATH . '/includes/class-loader.php';
-		require_once ZOHOWP_DIR_PATH . '/includes/class-i18n.php';
-		require_once ZOHOWP_DIR_PATH . '/includes/class-admin.php';
-		require_once ZOHOWP_DIR_PATH . '/includes/class-zoho.php';
-		require_once ZOHOWP_DIR_PATH . '/includes/class-elementor.php';
-
-		$this->loader = Loader::instance();
+	private function __construct()
+	{
+		self::add_action('init', 'init');
+		Admin::add_action('init', 'init');
 	}
 
-	private function load_i18n() {
-		$i18n = I18N::instance();
-		$this->loader->add_action('init', $i18n, 'load_plugin_textdomain');
-	}
-
-	private function load_admin() {
-		$admin = Admin::instance();
-		$this->loader->add_action('admin_menu', $admin, 'add_admin_menu');
-		$this->loader->add_action('admin_init', $admin, 'register_settings');
-	}
-
-	private function load_elementor() {
-		$elementor = Elementor::instance();
-		$this->loader->add_action('elementor_pro/forms/actions/register', $elementor, 'register_form_actions');
-	}
-
-	public function run() {
-		$this->loader->register_all();
+	public static function init()
+	{
+		load_plugin_textdomain('zoho-wp', false, dirname(plugin_basename(__FILE__)) . '/languages');
 	}
 }

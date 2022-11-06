@@ -4,14 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zoho for WordPress 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zoho-wp\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2022-11-06T04:01:00+00:00\n"
+"PO-Revision-Date: 2022-11-05 21:01-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-06T04:01:00+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.6.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Domain: zoho-wp\n"
 
 #. Plugin Name of the plugin
@@ -19,7 +21,9 @@ msgid "Zoho for WordPress"
 msgstr ""
 
 #. Description of the plugin
-msgid "Connects Wordpress to the Zoho API and adds a form submission action to Elementor Pro forms"
+msgid ""
+"Connects Wordpress to the Zoho API and adds a form submission action to "
+"Elementor Pro forms"
 msgstr ""
 
 #. Author of the plugin
@@ -67,7 +71,9 @@ msgid "Your Zoho account has been successfully connected."
 msgstr ""
 
 #: includes/admin/oauth.php:103
-msgid "You are currently connected to the Zoho API. To disconnect, delete the Client ID and Client Secret values below."
+msgid ""
+"You are currently connected to the Zoho API. To disconnect, delete the "
+"Client ID and Client Secret values below."
 msgstr ""
 
 #: includes/admin/oauth.php:105
@@ -79,7 +85,9 @@ msgid "Connect to Zoho"
 msgstr ""
 
 #: includes/admin/oauth.php:108
-msgid "You are not connected to the Zoho API. Please follow the steps below to integrate your site with Zoho."
+msgid ""
+"You are not connected to the Zoho API. Please follow the steps below to "
+"integrate your site with Zoho."
 msgstr ""
 
 #: includes/admin/oauth.php:109
@@ -126,8 +134,7 @@ msgstr ""
 msgid "Save the values to continue to the next step."
 msgstr ""
 
-#: includes/class-admin.php:35
-#: includes/class-admin.php:36
+#: includes/class-admin.php:35 includes/class-admin.php:36
 msgid "ZohoWP"
 msgstr ""
 
@@ -136,5 +143,7 @@ msgid "Welcome to Zoho for Wordpress"
 msgstr ""
 
 #: partials/admin/general.php:6
-msgid "Thanks for installing ZohoWP! To get started, visit the OAuth page to connect your Zoho account."
+msgid ""
+"Thanks for installing ZohoWP! To get started, visit the OAuth page to "
+"connect your Zoho account."
 msgstr ""
