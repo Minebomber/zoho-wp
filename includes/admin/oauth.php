@@ -102,7 +102,7 @@ class OAuth extends Page
 		<?php if ($has_refresh) : ?>
 			<p><?php _e('You are currently connected to the Zoho API. To disconnect, delete the Client ID and Client Secret values below.', 'zoho-wp'); ?></p>
 		<?php elseif ($has_client) : ?>
-			<p><?php _e('To disconnect, delete the Client ID and Client Secret values below', 'zoho-wp'); ?></p>
+			<p><?php _e('Click the link below to connect your Zoho account.', 'zoho-wp'); ?></p>
 			<a href='<?php echo \ZohoWP\API\OAuth::get_connection_link(); ?>' class='button button-primary'><?php _e('Connect to Zoho', 'zoho-wp'); ?></a>
 		<?php else : ?>
 			<p><?php _e('You are not connected to the Zoho API. Please follow the steps below to integrate your site with Zoho.', 'zoho-wp'); ?></p>
