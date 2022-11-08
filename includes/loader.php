@@ -23,4 +23,18 @@ trait Loader
 	{
 		add_filter($hook, [static::class, $callback], $priority, $accepted_args);
 	}
+	/**
+	 * Wrapper for add_action
+	 */
+	final public static function remove_action($hook, $callback, $priority = 10, $accepted_args = 1)
+	{
+		remove_action($hook, [static::class, $callback], $priority, $accepted_args);
+	}
+	/**
+	 * Wrapper for add_filter
+	 */
+	final public static function remove_filter($hook, $callback, $priority = 10, $accepted_args = 1)
+	{
+		remove_filter($hook, [static::class, $callback], $priority, $accepted_args);
+	}
 }

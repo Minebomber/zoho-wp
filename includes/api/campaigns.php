@@ -66,6 +66,22 @@ class Campaigns extends Base
 	}
 
 	/**
+ 	 * Unsubscribe a user from a mailing list
+	 * @param string $listkey The Zoho mailing list key
+	 * @param array $contactinfo The user info to add
+	 */
+	public static function unsubscribe($listkey, $contactinfo)
+	{
+		$json = self::api_request(
+			'POST',
+			self::campaigns_base_uri(),
+			'json/listunsubscribe',
+			['resfmt' => 'JSON', 'listkey' => $listkey, 'contactinfo' => json_encode($contactinfo)]
+		);
+		return $json;
+	}
+
+	/**
 	 * Get the base uri for Zoho Campaigns requests
 	 */
 	protected static function campaigns_base_uri()
