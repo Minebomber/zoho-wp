@@ -9,6 +9,7 @@ Connects Wordpress to the Zoho API.
 
 == Description ==
 Connects Wordpress with the Zoho API using OAuth. This plugin does not bundle any integrations or functionality beyond OAuth authentication and an internal API client, and is intended to be used with a variety of integration add-ons.
+
 == Changelog ==
 
 = 1.0.0 =
