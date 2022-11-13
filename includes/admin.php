@@ -5,6 +5,7 @@ namespace ZohoWP;
 require_once ZOHOWP_DIR_PATH . '/includes/loader.php';
 require_once ZOHOWP_DIR_PATH . '/includes/admin/general.php';
 require_once ZOHOWP_DIR_PATH . '/includes/admin/oauth.php';
+require_once ZOHOWP_DIR_PATH . '/includes/admin/cache.php';
 
 class Admin
 {
@@ -24,6 +25,7 @@ class Admin
 		$classes = apply_filters('zohowp_admin_classes', [
 			Admin\General::class,
 			Admin\OAuth::class,
+			Admin\Cache::class,
 		]);
 
 		foreach ($classes as $class) {
