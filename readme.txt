@@ -12,5 +12,8 @@ Connects Wordpress with the Zoho API using OAuth. This plugin does not bundle an
 
 == Changelog ==
 
+= 1.0.1 =
+* Increase amount of mailing lists fetched from API
+
 = 1.0.0 =
 * Initial release
