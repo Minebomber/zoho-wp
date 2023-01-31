@@ -21,7 +21,7 @@ class Campaigns extends Base
 			'GET',
 			self::campaigns_base_uri(),
 			'getmailinglists',
-			['resfmt' => 'JSON']
+			['resfmt' => 'JSON', 'range' => 60]
 		);
 		$items = $json['list_of_details'];
 		set_transient('zohowp_cache_mailing_lists', $items);
